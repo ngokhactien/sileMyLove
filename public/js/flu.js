@@ -137,7 +137,7 @@ Promise.all(assets).then(function(images) {
    
     document.getElementsByClassName('heartCa')[0]?.appendChild(canvas);
     
-    document.getElementsByClassName('heart')[0].addEventListener('click', function() {
+    document.getElementsByClassName('heart')[0]?.addEventListener('click', function() {
         
         Math.floor((Math.random()*10)+1);
         var min = 3,max=7;
