@@ -98,16 +98,16 @@
 });
 
 var assets = [
-    'images/1.png',
-    'images/2.png',
-    'images/3.png',
-    'images/4.png',
-    'images/5.png',
-    'images/6.png',
-    'images/7.png',
-    'images/8.png',
-    'images/9.png',
-    'images/10.png'
+    './images/x1.png',
+    './images/x2.png',
+    './images/x3.png',
+    './images/x4.png',
+    './images/x5.png',
+    './images/x6.png',
+    './images/x7.jpg',
+    './images/x8.png',
+    './images/x9.png',
+    './images/x10.png'
 ];
 assets.forEach(function(src, index) {
     assets[index] = new Promise(function(resolve) {
@@ -135,7 +135,7 @@ Promise.all(assets).then(function(images) {
     canvas.style['width'] = '170px';
     canvas.style['height'] = '300px';
    
-    document.getElementsByClassName('heartCa')[0].appendChild(canvas);
+    document.getElementsByClassName('heartCa')[0]?.appendChild(canvas);
     
     document.getElementsByClassName('heart')[0].addEventListener('click', function() {
         
